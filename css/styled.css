@@ -1,0 +1,100 @@
+/* Rule CHUNG */
+* {
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-color: #ffac46;
+  --blue-color: #09126e;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-variant: normal;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 25px;
+  color: #0a369e;
+}
+
+header {
+  background-color: #ffac46;
+}
+
+.navbar-brand img {
+  width: 7rem;
+}
+
+.nav-link {
+  color: rgba(220, 220, 220, 0.8);
+}
+
+.nav-item a {
+  font-size: medium;
+  color: gray;
+}
+
+.nav-item a:hover {
+  font-size: 1.3rem;
+  color: #09126e;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: grey;
+  padding: 2%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+/* ----------------------------------------------------------------------- */
+main {
+  margin-bottom: 100px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #09126e;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
+  color: #000;
+}

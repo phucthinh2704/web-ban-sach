@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styled.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Đăng Nhập</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.png" alt=""
+          /></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Trang Chủ</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Đăng nhập</h1>
+      <form>
+        <label for="username">Tài khoản:</label>
+        <input
+          type="text"
+          id="username"
+          name="email"
+          placeholder="Nhập tài khoản email"
+        />
+        <br />
+        <label for="password">Mật khẩu:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Nhập mật khẩu"
+        />
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name=""
+          id="showpass"
+          onclick="showPassword()"
+        />
+        <label style="display: inline-block" for="showpass"
+          >Hiện mật khẩu
+        </label>
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" />
+            Ghi nhớ đăng nhập
+          </label>
+          <div class="form-group">
+            <p id="thongbao" style="text-align: left; color: red"></p>
+          </div>
+        </div>
+        <br />
+        <button type="reset" id="loginbutton">Đăng nhập</button>
+      </form>
+      <p style="text-align: center">
+        Nếu bạn chưa có tài khoản<a href="dangky.html"> bấm vào đây</a> để đăng
+        ký
+      </p>
+    </main>
+    <footer>
+      <div class="contact">
+        <h1 style="text-align: left">Solar Book</h1>
+        <p>Khu 2, đường 3/2, P.Xuân Khánh, Q.Ninh Kiều, TP.Cần Thơ</p>
+        <p>
+          Solar Book nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ
+          đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống
+          Solar Book trên toàn quốc.
+        </p>
+        <div class="contact__noti">
+          <img
+            src="./img/footer/logo-bo-cong-thuong-da-thong-bao1.png"
+            alt=""
+          />
+        </div>
+        <div class="contact__icon">
+          <i class="ri-facebook-circle-fill"></i>
+          <i class="ri-instagram-fill"></i>
+          <i class="ri-youtube-fill"></i>
+          <i class="ri-twitter-fill"></i>
+          <i class="ri-pinterest-fill"></i>
+        </div>
+        <div class="contact__store">
+          <div class="contact__store-item">
+            <img src="./img/footer/android1.png" alt="" />
+          </div>
+          <div class="contact__store-item">
+            <img src="./img/footer/appstore1.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service__top">
+          <div class="service__info">
+            <h2>DỊCH VỤ</h2>
+            <ul>
+              <li>
+                <a href="">Điều khoản sử dụng</a>
+              </li>
+              <li>
+                <a href="">Chính sách bảo mật thông tin cá nhân</a>
+              </li>
+              <li>
+                <a href="">Chính sách bảo mật thanh toán</a>
+              </li>
+              <li>
+                <a href="">Giới thiệu SOLAR BOOK</a>
+              </li>
+              <li>
+                <a href="">Hệ thống trung tâm nhà sách</a>
+              </li>
+            </ul>
+          </div>
+          <div class="service__info">
+            <h2>HỖ TRỢ</h2>
+            <ul>
+              <li>
+                <a href="">Chính sách đổi - trả - hoàn tiền</a>
+              </li>
+              <li>
+                <a href="">Chính sách bảo hành - bồi hoàn</a>
+              </li>
+              <li>
+                <a href="">Chính sách vận chuyển</a>
+              </li>
+              <li>
+                <a href="">Chính sách khách sỉ</a>
+              </li>
+              <li>
+                <a href="">Phương thức thanh toán và xuất hóa đơn</a>
+              </li>
+            </ul>
+          </div>
+          <div class="service__info">
+            <h2>TÀI KHOẢN CỦA TÔI</h2>
+            <ul>
+              <li>
+                <a href="">Đăng nhập/tạo tài khoản mới</a>
+              </li>
+              <li>
+                <a href="">Thay đổi địa chỉ khách hàng</a>
+              </li>
+              <li>
+                <a href="">Chi tiết mua hàng</a>
+              </li>
+              <li>
+                <a href="">Lịch sử mua hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="service__bottom">
+          <h2>LIÊN HỆ</h2>
+          <div class="service__bottom-contact">
+            <p><i class="ri-map-pin-fill"></i> Đại học Cần Thơ Khu 2</p>
+            <p><i class="ri-mail-fill"></i> cskh@solar.com.vn</p>
+            <p><i class="ri-phone-fill"></i> 1900636467</p>
+          </div>
+          <img src="./img/footer/hoptac.png" alt="" />
+        </div>
+      </div>
+      <p id="test">
+        Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu
+        tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ
+        10, ngày 20/05/2022.
+      </p>
+    </footer>
+    <!-- Json -->
+    <script src="js/login2.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

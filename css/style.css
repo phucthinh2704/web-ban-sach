@@ -12,6 +12,7 @@
 body {
   background-color: #eaeaeab0;
 }
+
 .head__notice {
   height: 33px;
   margin-bottom: 31px;
@@ -72,8 +73,8 @@ header {
   flex-shrink: 0;
   font-size: 14px;
   font-weight: bold;
-  gap: 15px;
-  margin-left: -100px;
+  gap: 12px;
+  margin-left: -70px;
 }
 .inner__header-contact-item {
   display: flex;
@@ -99,7 +100,27 @@ header {
 .inner__header-search-detail > i {
   font-size: 32px;
 }
-
+.inner_header-signup-login {
+  display: flex;
+  align-items: center;
+  padding: 5px 17px;
+  border-radius: 6px;
+  transition: 0.2s linear;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.inner_header-signup-login i {
+  font-size: 25px;
+}
+.inner_header-signup-login a{
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+}
+.inner_header-signup-login:hover {
+  background-color: var(--hover-header);
+}
 /* MAIN */
 .banner {
   display: flex;
